@@ -1,0 +1,160 @@
+<input type="checkbox" id="menu-toggle">
+<div class="sidebar">
+    <!-- <div class="side-header">
+        <h3>M<span>odern</span></h3>
+    </div>
+     -->
+    <div class="side-content">
+        <div class="profile">
+            <div class="profile-img bg-img"
+                style="background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png)">
+            </div>
+            <h4>Client</h4>
+            <small>Client</small>
+        </div>
+        <div class="side-menu">
+            <ul>
+                <li>
+                    <a [routerLink]="['/']" class="active ">
+                        <span class="las la-home"></span>
+                        <small class="link-light ">Home</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['/client/list-article']" >
+                        <span><i class="bi bi-file-earmark-bar-graph"></i>
+                        </span>
+                        <small class="link-light">list article</small>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/client/list-ticket']" >
+                        <span ><i class="bi bi-card-list"></i>
+                        </span>
+                        <small class="link-light">list ticket</small>
+                    </a>
+               
+                <li>
+                    <a [routerLink]="['/client/service']" >
+                        <span><i class="bi bi-person-lines-fill"></i>
+                        </span>
+                        <small class="link-light">Service</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span ><i class="bi bi-person"></i>
+                        </span>                        <small class="link-light">Profile</small>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-content">
+
+    <app-header>
+    </app-header>
+
+
+    <main>
+
+        <div class="page-header">
+            <div class="row">
+             <div class="col-4">
+              <h1>List Article</h1>
+             </div>
+             <div class="col-8">
+              <app-bouton-create-ticket></app-bouton-create-ticket>
+             </div>
+            </div>
+              
+           </div>
+
+        <div class="container">
+            <div class="card p-4 mt-5">
+                <form>
+                    <div class="row g-3">
+
+
+                        <div class="col-12">
+                            <div class="form-check form-check-inline mb-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Roundtrip"
+                                    value="option1">
+                                <label class="form-check-label" for="Roundtrip">Documents en vigueur</label>
+
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Oneway"
+                                    value="option2">
+                                <label class="form-check-label" for="Oneway">Documents abrogés</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="MultiCity"
+                                    value="option3">
+                                <label class="form-check-label" for="MultiCity">Tous les documents</label>
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-floating">
+                                <input type="text" placeholder="Rechercher par mot clé " class="form-control">
+
+                                <label>Rechercher par mot clé </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <app-list-category></app-list-category>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-floating">
+                                <input type="date" placeholder="Date de Document" class="form-control">
+
+                                <label>Date de Document</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12">
+                            <app-specialite></app-specialite>
+                        </div>
+
+                        <div class="col-9 mt-4">
+                            <button class="btn btn-primary text-uppercase" type="submit">Recherche<i
+                                    class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div class="col-3 mt-4">
+                            <button type="button" class="btn btn-black ms-2"
+                                (click)="isCollapsed = ! isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                                aria-controls="collapseExample">
+                                Affiche le plus option
+                            </button>
+
+                            <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+
+                                <div class="card card-body">
+                                    <div class="col-lg-12 col-md-12">
+                                    <div class="form-floating">
+                                        <select class="form-select">
+                                            <option selected="" hidden="">All</option>
+                                            <option value="1">Juridique</option>
+                                            <option value="2">Social</option>
+                                            <option value="3">Fiscal</option>
+                                        </select>
+        
+                                        <label>Category</label>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+</div>

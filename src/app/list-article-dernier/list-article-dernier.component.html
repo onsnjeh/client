@@ -1,0 +1,36 @@
+<div class="records table-responsive">
+ <!-- <div class="record-header">
+     <div class="font-weight-bold">
+         <span>Dernier Document</span>
+     </div>
+ </div> -->
+ <div>	 <table width="100%">
+  <thead>
+      <tr>
+       <th><span class="col"></span> Ticket</th>
+       <th><span class="col"></span> Nom de document</th>
+          <th><span class="col"></span> Category</th>
+          <th><span class="col"></span> Theme</th>
+          <th><span class="col"></span> Nom d'expert</th>
+          <th><span class="col"></span> Date</th>
+          <th><span class="col"></span> Action</th>
+      </tr>
+  </thead>
+		
+	<tbody>
+		<tr *ngFor="let country of countries; index as i">
+			<th scope="row">{{ i + 1 }}</th>
+			<td>
+				{{ country.nameArticle }}
+			</td>
+			<td>{{ country.category }}</td>
+   <td>{{ country.theme }}</td>
+   <td>{{ country.expert }}</td>
+			<td>{{ country.date }}</td>
+            <td><app-bouton-open></app-bouton-open></td>
+
+		</tr>
+	</tbody>
+</table> 
+</div>
+</div>

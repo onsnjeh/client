@@ -1,0 +1,78 @@
+<input type="checkbox" id="menu-toggle">
+<div class="sidebar">
+    <!-- <div class="side-header">
+        <h3>M<span>odern</span></h3>
+    </div>
+     -->
+    <div class="side-content">
+        <div class="profile">
+            <div class="profile-img bg-img"
+                style="background-image: url(https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png)">
+            </div>
+            <h4>Client</h4>
+            <small>Client</small>
+        </div>
+        <div class="side-menu">
+            <ul>
+                <li>
+                    <a [routerLink]="['/']" class="active ">
+                        <span class="las la-home"></span>
+                        <small class="link-light ">Home</small>
+                    </a>
+                </li>
+
+                <li>
+                    <a [routerLink]="['/client/list-article']" >
+                        <span><i class="bi bi-file-earmark-bar-graph"></i>
+                        </span>
+                        <small class="link-light">list article</small>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/client/list-ticket']" >
+                        <span ><i class="bi bi-card-list"></i>
+                        </span>
+                        <small class="link-light">list ticket</small>
+                    </a>
+               
+                <li>
+                    <a [routerLink]="['/client/service']" >
+                        <span><i class="bi bi-person-lines-fill"></i>
+                        </span>
+                        <small class="link-light">Service</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span ><i class="bi bi-person"></i>
+                        </span>                        <small class="link-light">Profile</small>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-content">
+
+    <app-header>
+    </app-header>
+
+
+    <main>
+
+        <div class="page-header">
+            <div class="row">
+             <div class="col-4">
+              <h1>Mes Services</h1>
+             </div>
+             <div class="col-8">
+              <app-bouton-create-ticket></app-bouton-create-ticket>
+             </div>
+            </div>
+              
+           </div>
+<!-- Service -->
+
+
+<p>sevice works!</p>
+    </main></div>
