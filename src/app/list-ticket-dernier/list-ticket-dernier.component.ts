@@ -1,48 +1,49 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ticket } from '../model/ticket.model';
 
-interface ticket {
-  ticket:string
-	nameClient:string;
-	priority: string;
-	category: string;
-  expert:string;
-  date:string;
-}
+// interface ticket {
+//   ticket:string
+// 	nameClient:string;
+// 	priority: string;
+// 	category: string;
+//   expert:string;
+//   date:string;
+// }
 
-const COUNTRIES: ticket[] = [
-	{
-		ticket:'1',
-    nameClient: 'Ticket1',
-		priority: 'normale',
-		category: 'juridique',
-		expert: 'nom  expert 1',
-    date:'12/11/2023'
-	},
-	{
-		ticket:'2',
-    nameClient: 'Ticket2',
-		priority: 'urgent',
-		category: 'fiscal',
-		expert: 'nom  expert 1',
-    date:'12/11/2023'
-	},
-	{
-		ticket:'3',
-    nameClient: 'Ticket3',
-		priority: 'normale',
-		category: 'social',
-		expert: 'nom  expert 1',
-    date:'12/11/2023'
-	},
-	{
-		ticket:'4',
-    nameClient: 'Ticket4',
-		priority: 'normale',
-		category: 'juridique',
-		expert: 'nom  expert 1',
-    date:'12/11/2023'
-	},
-];
+// const COUNTRIES: ticket[] = [
+// 	{
+// 		ticket:'1',
+//     nameClient: 'Ticket1',
+// 		priority: 'normale',
+// 		category: 'juridique',
+// 		expert: 'nom  expert 1',
+//     date:'12/11/2023'
+// 	},
+// 	{
+// 		ticket:'2',
+//     nameClient: 'Ticket2',
+// 		priority: 'urgent',
+// 		category: 'fiscal',
+// 		expert: 'nom  expert 1',
+//     date:'12/11/2023'
+// 	},
+// 	{
+// 		ticket:'3',
+//     nameClient: 'Ticket3',
+// 		priority: 'normale',
+// 		category: 'social',
+// 		expert: 'nom  expert 1',
+//     date:'12/11/2023'
+// 	},
+// 	{
+// 		ticket:'4',
+//     nameClient: 'Ticket4',
+// 		priority: 'normale',
+// 		category: 'juridique',
+// 		expert: 'nom  expert 1',
+//     date:'12/11/2023'
+// 	},
+// ];
 
 @Component({
   selector: 'app-list-ticket-dernier',
@@ -50,6 +51,19 @@ const COUNTRIES: ticket[] = [
   styleUrls: ['./list-ticket-dernier.component.css']
 })
 export class ListTicketDernierComponent {
-	countries = COUNTRIES;
+	// countries = COUNTRIES;
+  @Input() item2: ticket;
+	constructor() {
+		this.item2 = {
+      id: 0,
+      nom: '' ,
+      priority: '',
+      category: '',
+      date:''
+		};
+	}
+	ngOnInit(): void {
+		console.log(this.item2);
+	}
 
 }

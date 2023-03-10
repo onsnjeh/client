@@ -79,13 +79,18 @@
                 <li ngbNavItem="list-article-dernier">
                     <a ngbNavLink>Dernier Document</a>
                     <ng-template ngbNavContent>
-                        <app-list-article-dernier></app-list-article-dernier>
+                        <div *ngFor='let item1 of item1'>
+                            <app-list-article-dernier [item1]="item1"></app-list-article-dernier>
+
+                        </div>
                     </ng-template>
                 </li>
                 <li ngbNavItem="list-ticket-dernier">
                     <a ngbNavLink>Dernier Tickets</a>
                     <ng-template ngbNavContent>
-                        <app-list-ticket-dernier></app-list-ticket-dernier>
+                        <div *ngFor='let item2 of item2'>                 
+                                   <app-list-ticket-dernier [item2]="item2"></app-list-ticket-dernier>
+                        </div>
 
                     </ng-template>
                 </li>

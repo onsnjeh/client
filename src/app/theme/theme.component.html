@@ -1,7 +1,7 @@
 <div class="form-floating">
- <select class="form-select" [(ngModel)]="selectedOption">
-     <option *ngFor="let option of options" [value]="option">{{option}}</option>
-     <!-- <option *ngFor="let option of options" [value]="option">{{option}}</option> -->
+ <select class="form-select" >
+    <option *ngFor="let listTheme of listTheme" >{{listTheme.theme}}</option>
+    <!-- <option *ngFor="let option of options" [value]="option">{{option}}</option> -->
      <!-- <option value="2">Social</option>
      <option value="3">Fiscal</option> -->
  </select>

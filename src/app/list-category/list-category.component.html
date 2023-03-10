@@ -1,6 +1,6 @@
  <div class="form-floating">
-     <select class="form-select" [(ngModel)]="selectedOption">
-         <option *ngFor="let option of options" [value]="option">{{option}}</option>
+     <select class="form-select" >
+         <option *ngFor="let listCategory of listCategory" >{{listCategory.category}}</option>
          <!-- <option *ngFor="let option of options" [value]="option">{{option}}</option> -->
          <!-- <option value="2">Social</option>
          <option value="3">Fiscal</option> -->
@@ -8,3 +8,9 @@
 
      <label>Category</label>
  </div>
+ <!--  <select class="form-select" [(ngModel)]="selectedOption">
+         <option *ngFor="let option of options" [value]="option">{{option}}</option>
+          <option *ngFor="let option of options" [value]="option">{{option}}</option> 
+         <option value="2">Social</option>
+         <option value="3">Fiscal</option> 
+     </select> -->

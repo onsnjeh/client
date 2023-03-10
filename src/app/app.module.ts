@@ -16,7 +16,7 @@ import { ListTicketDernierComponent } from './list-ticket-dernier/list-ticket-de
 import { ListArticleDernierComponent } from './list-article-dernier/list-article-dernier.component';
 import { DecimalPipe, NgFor } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import {HttpClientModule} from '@angular/common/http';
 import { ListArticleComponent } from './list-article/list-article.component';
 import { ListTicketComponent } from './list-ticket/list-ticket.component';
 import { SeviceComponent } from './sevice/sevice.component';
@@ -69,7 +69,8 @@ import { TypeComponent } from './type/type.component';
      FormsModule,
      NgbModule,
      NgbCollapseModule,
-     NgbNavModule
+     NgbNavModule,
+     HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,168 @@
+{
+  "document": [
+    {
+      "id":"1",
+      "nom": "Article1",
+      "category": "juridique",
+      "type": "loi",
+      "theme":"loi",
+      "date":"12/11/2023"
+    },
+    {
+      "id":"2",
+      "nom": "Article2",
+      "category": "fiscal",
+      "type": "loi",
+      "theme":"loi",
+      "date":"12/11/2023"
+    }
+  ],
+  "ticket": [
+    {
+      "id":"1",
+      "nom": "Ticket1",
+      "priority": "normale",
+      "category": "juridique",
+      "date":"12/11/2023"
+    },
+    {
+      "id":"2",
+      "nom": "Ticket2",
+      "priority": "urgent",
+      "category": "fiscal",
+      "date":"12/11/2023"
+    }
+  ],
+  "category":
+  [{
+    "id":"1",
+    "category":"all"
+  },
+  {
+    "id":"2",
+    "category":"fiscal"
+  },
+  {
+    "id":"3",
+    "category":"social"
+  },
+  {
+    "id":"4",
+    "category":"juridique"
+  },
+  {
+    "id":"5",
+    "category":"jnfkdsqj"
+  }
+],
+
+"priority":[{
+  "id":"1",
+  "priority":"all"
+},
+{
+  "id":"2",
+  "priority":"urgent"
+},
+{
+  "id":"3",
+  "priority":"medium"
+},
+{
+  "id":"4",
+  "priority":"normale"
+},
+{
+  "id":"5",
+  "category":"jnfkdsqj"
+}],
+"type-juridique":
+[
+  {
+    "id":"1",
+    "type":"all"
+  },{
+  "id":"2",
+  "type":"loi organique"
+},
+{
+  "id":"3",
+  "type":"Constitution"
+},
+{
+  "id":"4",
+  "type":"décrets lois"
+},
+{
+  "id":"5",
+  "type":"loi"
+},
+{
+  "id":"6",
+  "type":"décret"
+},{
+  "id":"7",
+  "type":"Circulaires"
+},
+{
+  "id":"8",
+  "type":"decision"
+}
+,{
+  "id":"9",
+  "type":"note"
+}
+,{
+  "id":"10",
+  "type":"code"
+},
+{
+  "id":"11",
+  "type":" judes predences"
+}
+],
+"theme-juridique":
+[
+  {
+    "id":"1",
+    "theme":"all"
+  },{
+  "id":"2",
+  "theme":"droit commercial"
+},
+{
+  "id":"3",
+  "theme":"société commercial"
+},
+{
+  "id":"4",
+  "theme":"travail/social"
+},
+{
+  "id":"5",
+  "theme":"droit civil"
+},
+{
+  "id":"6",
+  "theme":"statut personnel"
+},{
+  "id":"7",
+  "theme":"arbitrage"
+},
+{
+  "id":"8",
+  "theme":"droit pénal"
+}
+,{
+  "id":"9",
+  "theme":"fiscal"
+}
+,{
+  "id":"10",
+  "theme":"droit international privé"
+},
+{
+  "id":"11",
+  "theme":"droit international public"
+}]
+}
